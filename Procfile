@@ -1,0 +1,1 @@
+web: gunicorn even86.wsgi --log-file -

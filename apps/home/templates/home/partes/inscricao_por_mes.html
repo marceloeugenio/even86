@@ -1,0 +1,21 @@
+{% load static %}
+<div id="eventos" hx-get="/get_inscricao_por_mes/" hx-trigger="every 60s" hx-swap="innherhtml" class="col d-flex">
+    <div class="card radius-10 w-100">
+        <div class="card-body">
+            <h4 class="font-weight-bold mb-0">Por Mês</h4>
+            <div class="d-flex align-items-center">
+                <div>
+                    <p class="mb-0  text-secondary">Total: 432</p>
+                </div>
+                <div class="">
+                    <p class="mb-0 align-self-center font-weight-bold text-success ms-2">4.4 <i class='bx bxs-up-arrow-alt mr-2'></i>
+                    </p>
+                </div>
+            </div>
+            <div id="chart21"></div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'app/assets/js/chart21.js' %}"></script>
+<script src="https://unpkg.com/htmx.org@1.6.1/dist/htmx.min.js"></script>

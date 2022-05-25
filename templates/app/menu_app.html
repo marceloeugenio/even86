@@ -1,0 +1,103 @@
+{% load static %}
+<!--navigation-->
+<ul class="metismenu" id="menu">
+    <li>
+        <a href="javascript:;" class="has-arrow">
+            <div class="parent-icon"><i class='bx bx-home-circle'></i>
+            </div>
+            <div class="menu-title">Dashboard</div>
+        </a>
+        <ul>
+            <li> <a href="{% url 'dashboard_inscricoes' %}"><i class="bx bx-right-arrow-alt"></i>Inscrições</a>
+            </li>
+            <li> <a href="{% url 'dashboard_certificados' %}"><i class="bx bx-right-arrow-alt"></i>Gerador de Certificados</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a class="has-arrow" href="javascript:;">
+            <div class="parent-icon"><i class='bx bx-category'></i>
+            </div>
+            <div class="menu-title">Cadastros</div>
+        </a>
+        <ul>
+            <li> <a href="{% url 'pessoas_list' %}"><i class="bx bx-right-arrow-alt"></i>Pessoas</a>
+            </li>
+            <li> <a href="{% url 'evento_listar' %}"><i class="bx bx-right-arrow-alt"></i>Eventos</a>
+            </li>
+            <li> <a href="{% url 'programacao_listar' %}"><i class="bx bx-right-arrow-alt"></i>Programação</a>
+            </li>
+            <li> <a href="{% url 'submissoes_listar' %}"><i class="bx bx-right-arrow-alt"></i>Submissões</a>
+            </li>
+        </ul>
+    </li>
+    <li class="menu-label">Movimento</li>
+    <li>
+        <a class="has-arrow" href="javascript:;">
+            <div class="parent-icon"><i class='bx bx-meteor'></i>
+            </div>
+            <div class="menu-title">Controle</div>
+        </a>
+        <ul>
+            <li> <a href="{% url 'credenciamento_listar' %}"><i class="bx bx-right-arrow-alt"></i>Credenciamento</a>
+            </li>
+            <li> <a href="{% url 'acesso_recepcao' %}"><i class="bx bx-right-arrow-alt"></i>Acesso os Evento</a>
+            </li>
+            <li> <a href="{% url 'submissoes_controle_listar' %}"><i class="bx bx-right-arrow-alt"></i>Submissões</a>
+            </li>
+            <li> <a href="{% url 'transmissao_online_listar' %}"><i class="bx bx-right-arrow-alt"></i>Transmissão Online</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a class="has-arrow" href="javascript:;">
+            <div class="parent-icon"><i class="bx bx-shape-polygon"></i>
+            </div>
+            <div class="menu-title">Utilitários</div>
+        </a>
+        <ul>
+            <li> <a href="{% url 'importar_exportar_listar' %}"><i class="bx bx-right-arrow-alt"></i>Importar / Exportar</a>
+            </li>
+            <li> <a href="{% url 'gerador_certificados_listar' %}"><i class="bx bx-right-arrow-alt"></i>Gerador de Certificados</a>
+            </li>
+            <li> <a href="{% url 'gerador_cracha_listar' %}"><i class="bx bx-right-arrow-alt"></i>Gerador de Crachá</a>
+            </li>
+            <li> <a href="{% url 'validacao_certificado_listar' %}"><i class="bx bx-right-arrow-alt"></i>Validação de Certificado</a>
+            </li>
+        </ul>
+    </li>
+    <li class="menu-label">Configurações</li>
+    <li>
+        <a class="has-arrow" href="javascript:;">
+            <div class="parent-icon"><i class="bx bx-lock"></i>
+            </div>
+            <div class="menu-title">Perfil</div>
+        </a>
+        <ul>
+            <li> <a href="{% url 'usuario_perfil' %}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Meu perfil</a>
+            </li>
+            <li> <a href="{% url 'organizadores_listar' %}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Organizadores</a>
+            </li>
+            <li> <a href="{% url 'ajuda_informacoes' %}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Ajuda</a>
+            </li>
+            <li> <a href="{% url 'feedback_listar' %}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Feedback</a>
+            </li>
+            <li> <a href="#" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sair</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<!--end navigation-->
+
+
+
+
+
+
+
+
+
+
+
+
+

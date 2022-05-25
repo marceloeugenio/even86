@@ -1,0 +1,24 @@
+{% load static %}
+<div id="inscricoes_por_categoria" hx-target="#inscricoes_por_categoria" hx-get="/get_inscricao_por_categoria/" hx-trigger="every 30s" hx-swap="innherhtml" class="col d-flex">
+    <div class="card radius-10 w-100">
+        <div class="card-body">
+            <div class="d-flex align-items-center">
+                <div>
+                    <h5 class="mb-0">Por Categoria</h5>
+                </div>
+                <div class="font-22 ms-auto"><i class='bx bx-dots-horizontal-rounded'></i>
+                </div>
+            </div>
+            <div class="mt-5" id="chart15"></div>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Profissional <span class="badge bg-success rounded-pill">25</span>
+            </li>
+            <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Estudante <span class="badge bg-danger rounded-pill">10</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="{% static 'app/assets/js/chart15.js' %}"></script>
+<script src="https://unpkg.com/htmx.org@1.6.1/dist/htmx.min.js"></script>

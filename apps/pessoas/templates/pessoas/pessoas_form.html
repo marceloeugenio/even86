@@ -1,0 +1,108 @@
+{% extends 'app/base_interna_1.html' %}
+{% load static %}
+
+{% block title %}Even86 - ferramenta para organização de eventos{% endblock %}
+
+{% block include-head %}{% endblock %}
+
+{% block main %}
+<!--start page wrapper -->
+<div class="page-wrapper">
+    <div class="page-content">
+        <!--breadcrumb-->
+        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+            <div class="breadcrumb-title pe-3">Cadastros</div>
+            <div class="ps-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0 p-0">
+                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Pessoas</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="ms-auto">
+
+            </div>
+        </div>
+        <!--end breadcrumb-->
+        <div class="row">
+            <div class="col-xl-7 mx-auto">
+                <!-- <h6 class="mb-0 text-uppercase">Pessoas</h6> -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Opções</button>
+                    <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	
+                        <a class="dropdown-item" href="{% url 'pessoas_list' %}">Listar</a>
+                        <div class="dropdown-divider"></div>	
+                        <a class="dropdown-item" href="{% url 'pessoas_adicionar' %}">Adicionar</a>
+                    </div>
+                </div>
+                <hr/>
+                <div class="card border-top border-0 border-4 border-primary">
+                    <div class="card-body p-5">
+                        <div class="card-title d-flex align-items-center">
+                            <div><i class="bx bxs-user me-1 font-22 text-primary"></i>
+                            </div>
+                            <h5 class="mb-0 text-primary">Pessoa</h5>
+                        </div>
+                        <hr>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputPrimeiroNome" class="form-label">Primeiro Nome</label>
+                                <input type="email" class="form-control" id="inputPrimeiroNome">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputSegundoNome" class="form-label">Segundo Nome</label>
+                                <input type="password" class="form-control" id="inputSegundoNome">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="inputSenha">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputEndereco" class="form-label">Endereço</label>
+                                <textarea class="form-control" id="inputEndereco" placeholder="Endereço..." rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputComplemento" class="form-label">Complemento</label>
+                                <textarea class="form-control" id="inputComplemento" placeholder="Complemento..." rows="3"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCidade" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="inputCidade">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputEstado" class="form-label">Estado</label>
+                                <select id="inputEstado" class="form-select">
+                                    <option selected>Selecione...</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputCep" class="form-label">Cep</label>
+                                <input type="text" class="form-control" id="inputCep">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary px-5">Adicionar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end row-->
+    </div>
+</div>
+<!--end page wrapper -->
+{% endblock %}
+
+
+{% block include-footer %}
+    
+{% endblock %}
